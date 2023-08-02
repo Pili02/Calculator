@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Style.css">
+    <title>Document</title>
+    <style>
+        #title{
+    display: flex;
+    background-color: rgb(255, 205, 98);
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    height: 100px;
+    }
+
+    html{
+        background-color: rgb(36, 36, 36);
+    }
+
+    #interface{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 300px;
+        grid-template-rows: 100px 100px 100px 100px;
+    }
+
+    .answer{
+        grid-row: span 2;
+        background-color: rgb(177, 219, 255);
+        padding: 50px;
+        text-align: center;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .display{
+        margin-left: 30px;
+        grid-row: span 2;
+        background-color: rgb(177, 219, 255);
+        padding: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .n0{
+        grid-column-start: 2;
+    }
+    .number{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 205, 98);
+        font-size: 20px;
+        border-radius: 25%;
+    }
+    .operation{
+        border-radius: 25%;
+        font-size: 20px;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 205, 98);
+    }
+    .equal{
+        border-radius: 25%;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 205, 98);
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <section id="title">
+        <h1>Calculator</h1>
+    </section>
+    <div style="display: flex; justify-content: center;">
+    <section id="interface">
+        <button class="number n1">1</button>
+        <button class="number n2">2</button>
+        <button class="number n3">3</button>
+        <button class="operation add">+</button>
+        <div class="display"><p class="innerdis"></p></div>
+        <button class="number n4">4</button>
+        <button class="number n5">5</button>
+        <button class="number n6">6</button>
+        <button class="operation sub">-</button>
+        <button class="number n7">7</button>
+        <button class="number n8">8</button>
+        <button class="number n9">9</button>
+        <button class="operation mul">*</button>
+        <div class="answer"><p class="innerans"></p></div>
+        <button class="number clear">AC</button>
+        <button class="number n0">0</button>
+        <button class="equal">=</button>
+        <button class="operation div">/</button>
+    </section></div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
